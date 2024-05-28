@@ -1,0 +1,20 @@
+appId: fr.jujudave.custom-minecraft-launcher
+productName: Custom Minecraft Launcher
+copyright: null
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish: null
+nsis:
+  oneClick: false # Permet à l'utilisateur de choisir les paramètres d'installation
+  allowElevation: true # Permet à l'installateur de demander les droits administratifs si nécessaire
+  allowToChangeInstallationDirectory: true # Permet à l'utilisateur de choisir le chemin d'installation
+  createDesktopShortcut: true # Crée un raccourci sur le bureau
+  createStartMenuShortcut: true # Crée un raccourci dans le menu démarrer
+  shortcutName: "Custom Minecraft Launcher" # Nom du raccourci
+  uninstallDisplayName: "Custom Minecraft Launcher" # Nom affiché dans la liste des programmes pour désinstallation
