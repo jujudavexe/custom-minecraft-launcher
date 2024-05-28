@@ -13,3 +13,11 @@
     @apply text-white font-bold px-4 py-2 rounded bg-blue-600 hover:bg-blue-500;
   }
 }
+
+.canBeDrag {
+  -webkit-app-region: drag;
+}
+
+.cantBeDrag {
+  -webkit-app-region: no-drag;
+}

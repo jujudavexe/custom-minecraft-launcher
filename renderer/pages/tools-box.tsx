@@ -1,4 +1,5 @@
 
+
 export default function ToolsBox(){
     function handleClose(){
         window.ipc.send('close', '')
@@ -10,16 +11,16 @@ export default function ToolsBox(){
 
     return (
         <>
-            <div className="flex justify-end w-full">
+            <div className="flex justify-end w-full canBeDrag">
                 <button
                     onClick={handleMinimize}
-                    className="text-2xl text-white align-text-top w-10 h-10 hover:bg-gray-700 spac"
+                    className="text-2xl text-white align-text-top w-10 h-10 hover:bg-gray-700 spac cantBeDrag"
                 >
                     -
                 </button>
                 <button
                     onClick={handleClose}
-                    className="text-1xl text-white text-center w-10 h-10 hover:bg-red-800"
+                    className="text-1xl text-white text-center w-10 h-10 hover:bg-red-800 cantBeDrag"
                 >
                     X
                 </button>
